@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f5f5f5;
+    background-image: linear-gradient( #421d1d, rgb(38, 29, 63));
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+.contaigner-one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__title, .header__subtitle, .about__heading, .technologies__heading, .footer__text {
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+p {
+    color: #ddd;    
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+.technologies__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+
+.technologies__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies__item i, .technologies__item img { 
+    list-style-type: none;
+    height: 90px;
+    width: 90px;
+    font-size: 90px;
+    transition: all 0.3s ease-in-out; 
+    transform: rotate(-3deg);  
+    color: #f5f5f5;
+    filter: brightness(0.8);
+}
+
+.technologies__item img[src*="mongodb"] {
+    filter: invert(35%) sepia(95%) saturate(741%) hue-rotate(86deg) brightness(92%) contrast(89%);
+}
+
+.technologies__item img[src*="mongodb"]:hover {
+    transform: scale(1.1);
+    filter: invert(35%) sepia(95%) saturate(741%) hue-rotate(86deg) brightness(92%) contrast(89%) drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.493));
+}
+
+.technologies__item img[src*="mysql"] {
+    filter: invert(18%) sepia(99%) saturate(537%) hue-rotate(351deg) brightness(110%) contrast(91%);
+}
+
+.technologies__item img[src*="mysql"]:hover {
+    transform: scale(1.1);
+    filter: invert(18%) sepia(99%) saturate(537%) hue-rotate(351deg) brightness(120%) contrast(91%) drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.493));
+}
+
+.technologies__item i:hover {
+    transform: scale(1.1);
+    filter: brightness(1) drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.493));
+}
+
+.fab.fa-html5 { color: #e34f26; }
+.fab.fa-css3-alt { color: #1572b6; }
+.fab.fa-js { color: #f7df1e; }
+.fab.fa-react { color: #61dafb; }
+.fab.fa-node-js { color: #339933; }
+.fab.fa-php { color: #777bb4; }
+.fab.fa-git { color: #f34f29; }
+.fab.fa-wordpress { color: #21759b; }
+.fas.fa-database { color: #4d4d4d; } /* Generic color for database icons */
+
+
+/* projects */
+
+.projects-section {
+    top: 0;
+    min-height: 50vh;
+}
+
+.projects__heading {
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.projects {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+.projects__card {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 20px;
+    color: #f5f5f5;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s ease-in-out;
+}
+
+.projects__card:hover {
+    transform: scale(1.05);
+}
+
+
+p a {
+    color: #6d88ff;
+    text-decoration: none;
+} 
+
+video {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+footer h3 {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #010024;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
